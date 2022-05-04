@@ -1,0 +1,728 @@
+/*  */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Patua One', cursive;
+}
+
+/* inicio nav */
+
+nav {
+    background-color: #1C658C;
+    height: 55px;
+    width: 100%;
+    position: fixed;
+    box-shadow: 1px 0px 10px 10px rgba(0, 0, 0, .3);
+}
+
+nav a img {
+    height: 55px;
+    float: left;
+    padding: 5px 10px;
+}
+
+nav a h1 {
+    line-height: 55px;
+    font-size: 25px;
+    float: left;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+}
+
+#check {
+    display: none;
+}
+
+.boton-menu {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 55px;
+    margin-right: 15px;
+}
+
+nav ul {
+    position: fixed;
+    width: 100%;
+    height: calc(100vh - 55px);
+    background-color: #398AB9;
+    top: 55px;
+    right: -100%;
+    text-align: center;
+    transition: all .5s;
+}
+
+nav ul li {
+    margin: 50px 0;
+    line-height: 40px;
+}
+
+nav ul li a {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+#check:checked~ul {
+    right: 0;
+}
+
+/* fin del nav */
+
+/* inicio de index.html */
+
+.grid-layout-index {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "presentacion"
+        "servicios"
+        "imp-3d"
+        "dis-3d"
+        "contacto";
+}
+/* presentacion index */
+.presentacion-index {
+    grid-area: presentacion;
+    height: 100vh;
+    background-image: url(../img/fondo-index.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentacion-index div {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: auto;
+    width: 70%;
+    max-width: 500px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.presentacion-index div h2 {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 40px 15px 20px;
+}
+
+.presentacion-index div p {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0 15px 40px;
+}
+
+.presentacion-index div span {
+    font-family: 'Oswald', sans-serif;
+    text-decoration: underline;
+}
+/* fin de presentacion index */
+/* servicios-index */
+.servicios-index {
+    grid-area: servicios;
+    text-align: center;
+    background-color: #D8D2CB;
+    padding: 15px 0;
+}
+
+.serv-imp-3d {
+    grid-area: imp-3d;
+    margin: 40px auto;
+    box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: auto;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.serv-imp-3d img {
+    width: 75%;
+    margin-top: 30px;
+}
+
+.serv-imp-3d h3 {
+    margin: 15px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+}
+
+.serv-imp-3d p {
+    margin: 0 15px 20px;
+}
+
+.serv-imp-3d a {
+    background-color: #398AB9;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+}
+
+.serv-dis-3d {
+    grid-area: dis-3d;
+    margin: 40px auto;
+    box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: auto;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.serv-dis-3d img {
+    width: 75%;
+    margin-top: 30px;
+}
+
+.serv-dis-3d h3 {
+    margin: 15px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+}
+
+.serv-dis-3d p {
+    margin: 0 15px 20px;
+}
+
+.serv-dis-3d a {
+    background-color: #398AB9;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+}
+/* fin de servicios-index */
+/* contacto-index */
+.contacto-index {
+    grid-area: contacto;
+    background-color: #46a2d8;
+    text-align: center;
+    padding: 30px;
+    height: auto;
+}
+
+.contacto-index h3 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.contacto-index a {
+    background-color: #1C658C;
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+    font-size: 30px;
+}
+/* fin de contacto-index */
+/* fin de index.html */
+
+/* trabajos.html */
+/* presentacion trabajos */
+.presentacion-trabajos {
+    height: 100vh;
+    background-image: url(../img/fondo-trabajos.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentacion-trabajos div {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: auto;
+    width: 70%;
+    max-width: 500px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.presentacion-trabajos div h2 {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 40px 15px 20px;
+}
+
+.presentacion-trabajos div p {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0 15px 40px;
+}
+
+.subtitulo-trabajos {
+    text-align: center;
+    background-color: #D8D2CB;
+    padding: 15px 0;
+    margin-bottom: 40px;
+}
+/* fin de presentacion trabajos */
+
+/* tipos de trabajos */
+.tipos-de-trabajos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tipos-de-trabajos div{
+    background: #1C658C linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+    width: 80%;
+    max-width: 500px;
+    height: 75px;
+    line-height: 75px;
+    margin-bottom: 40px;
+    padding-left: 15px;
+    animation: 1s ease;
+}
+
+.tipos-de-trabajos div h3 {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+/* fin de tipos de trabajos */
+/* fin de trabajos.html */
+
+/* impresion-3d.html */
+/* presentacion impresion 3d */
+.presentacion-impresion-3d {
+    height: 100vh;
+    background-image: url(../img/fondo-impresion.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentacion-impresion-3d div {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: auto;
+    width: 70%;
+    max-width: 500px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.presentacion-impresion-3d div h2 {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 40px 15px 20px;
+}
+
+.presentacion-impresion-3d div p {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0 15px 40px;
+}
+
+.subtitulo-impresion-3d {
+    text-align: center;
+    background-color: #D8D2CB;
+    padding: 15px 0;
+    margin-bottom: 40px;
+}
+
+.subtitulo-impresion-3d h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.subtitulo-impresion-3d p {
+    font-size: 20px;
+    margin: 0 15px 10px;
+}
+/* fin de presentacion impresion 3d */
+.como-funciona {
+    display: grid;
+    grid-template-areas: 
+    "sub-titulo"
+    "texto";
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.como-funciona img {
+    display: none;
+}
+
+.como-funciona h3 {
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.como-funciona p {
+    margin: 5px 20px;
+    font-size: 18px;
+}
+/* fin de impresion-3d.html */
+
+/* diseño-3d.html */
+/* inicio de presentacion */
+.presentacion-diseño-3d {
+    height: 100vh;
+    background-image: url(../img/fondo-diseno.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentacion-diseño-3d div {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: auto;
+    width: 70%;
+    max-width: 500px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.presentacion-diseño-3d div h2 {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 40px 15px 20px;
+}
+
+.presentacion-diseño-3d div p {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0 15px 40px;
+}
+/* fin de presentacion */
+/* contenido diseño 3d */
+.informacion-diseño-3d {
+    display: grid;
+    grid-template-areas: 
+    "sub-titulo"
+    "texto";
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.informacion-diseño-3d img {
+    display: none;
+}
+
+.informacion-diseño-3d h3 {
+    text-align: center;
+    background-color: #D8D2CB;
+    padding: 15px 0;
+    margin-bottom: 10px;
+}
+
+.informacion-diseño-3d p {
+    margin: 5px 20px;
+    font-size: 18px;
+}
+/* fin del contenido de diseño 3d */
+
+/* fin de diseño-3d.html */
+
+/* contacto.html */
+.presentacion-contacto {
+    height: 100vh;
+    background-image: url(../img/fondo-diseno.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentacion-contacto div {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: auto;
+    width: 70%;
+    max-width: 500px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.presentacion-contacto div h2 {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 40px 15px 40px;
+}
+/* contacto */
+.contenedor-principal-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(241, 241, 241);
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contacto h3 {
+    padding: 10px 20px;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.formulario-contacto input {
+    height: 50px;
+    background-color: rgb(143, 143, 143);
+    color: white;
+    border: 0px;
+    margin: 20px 25px;
+    width: 80%;
+    max-width: 400px;
+    padding: 25px;
+    font-size: 20px;
+}
+
+.formulario-contacto div {
+    position: relative;
+}
+
+.formulario-contacto label {
+    position: absolute;
+    color: rgb(241, 241, 241);
+    top: 35px;
+    left: 45px;
+    font-size: 20px;
+    pointer-events: none;
+    width: 300px;
+}
+
+.contenedor-boton-contacto input {
+    background-color: rgb(51, 204, 255);
+    border-radius: 5px;
+    width: 200px;
+    height: 70px;
+}
+/* fin de contacto */
+
+/* nuestros datos */
+.nuestros-datos {
+    margin-bottom: 20px;
+}
+.nuestros-datos h3 {
+    padding: 10px 0px;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 10px;
+}
+
+.nuestros-datos p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.nuestros-datos p span {
+    font-weight: bold;
+}
+/* fin nuestros datos */
+/* fin de contacto.html */
+
+/* footer */
+footer {
+    background-color: #757575;
+    height: 60px;
+    position: relative;
+}
+
+footer a i {
+    float: left;
+    position: absolute;
+    top: 10px;
+    font-size: 35px;
+    color: black;
+    padding-left: 5px;
+}
+
+.mail {
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.mail p {
+    display: inline;
+    line-height: 60px;
+}
+/* fin de footer */
+
+/* media queries */
+@media screen and (min-width: 1024px){
+    .boton-menu {
+        display: none;
+    }
+    
+    nav ul {
+        position: relative;
+        width: auto;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0);
+        top: 0px;
+        right: 0;
+        float: right;
+        margin-right: 20px;
+        animation: 0s;
+    }
+    
+    nav ul li {
+        margin: 0 5px;
+        line-height: 55px;
+        display: inline;
+
+    }
+
+    nav ul li:hover {
+        text-decoration: underline;
+        
+    }
+
+    .grid-layout-index {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+            "presentacion presentacion"
+            "servicios servicios"
+            "imp-3d dis-3d"
+            "contacto contacto";
+    }
+
+    .presentacion-index div h2 {
+        font-size: 45px;
+    }
+    
+    .presentacion-trabajos div h2 {
+        font-size: 45px;
+    }
+
+    .presentacion-impresion-3d div h2 {
+        font-size: 45px;
+    }
+
+    .presentacion-diseño-3d div h2 {
+        font-size: 45px;
+    }
+
+    .como-funciona {
+        display: grid;
+        grid-template-areas: 
+        "sub-titulo foto"
+        "texto foto"; 
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+    
+    .como-funciona img {
+        grid-area: foto;
+        display: inline;
+        width: 100%;
+        float: right;
+    }
+    
+    .como-funciona h3 {
+        grid-area: sub-titulo;
+        text-align: center;
+        background-color: white;
+        padding: 70px 0 10px;
+        font-size: 25px;
+    }
+    
+    .como-funciona p {
+        grid-area: texto;
+        margin: 5px 20px;
+        font-size: 18px;
+    }
+
+    .informacion-diseño-3d {
+        display: grid;
+        grid-template-areas: 
+        "foto sub-titulo"
+        "foto texto"; 
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+    
+    .informacion-diseño-3d img {
+        grid-area: foto;
+        display: inline;
+    }
+    
+    .informacion-diseño-3d h3 {
+        grid-area: sub-titulo;
+        text-align: center;
+        background-color: white;
+        padding: 70px 0 10px;
+        font-size: 25px;
+    }
+    como-funciona
+    .informacion-diseño-3d p {
+        grid-area: texto;
+        margin: 5px 20px;
+        font-size: 18px;
+    }
+
+    .contenedor-principal-contacto {
+        flex-direction: row;
+    }
+}
+
+/* fin de media queries */
