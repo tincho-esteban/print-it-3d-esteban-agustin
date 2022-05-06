@@ -18,75 +18,96 @@
 
 <body>
     <!-- INICIO DEL NAV -->
-    <nav>
-        <!-- logo y nombre -->
-        <a href="index.html">
-            <img class="logo" src="img/logo-2.png" alt="logo-print-it-3D">
-            <h1 class="PrintIt">Print it 3D</h1>
-        </a>
-        <!-- fin de logo y nombre -->
-        <!-- navegacion -->
-        <input type="checkbox" id="check">
-        <label for="check" class="boton-menu">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-        <ul>
-            <li><a href="index.html">INICIO</a></li>
-            <li><a href="pages/trabajos.html">TRABAJOS</a></li>
-            <li><a href="pages/impresion-3d.html">IMPRESION 3D</a></li>
-            <li><a href="pages/diseño-3d.html">DISEÑO 3D</a></li>
-            <li><a href="pages/contacto.html">CONTACTO</a></li>
-        </ul>
-        <!-- fin de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-dark  nav-grid">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="img/logo-2.png" alt="logo-print-it-3D">
+                <h1 class="PrintIt">Print it 3D</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex flex-grow-0" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/trabajos.html">Trabajos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="pages/impresion-3d.html">Impresion 3D</a></li>
+                        <li><a class="dropdown-item" href="pages/diseño-3d.html">Diseño 3D</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <!-- FIN DEL NAV -->
-        <!-- INICIO DEL MAIN -->
-        <main class="grid-layout-index">
-            <!-- inicio de seccion de presentacion -->
-            <section class="presentacion-index">
-                <div>
-                    <h2>IMPRIMIMOS TODAS TUS IDEAS EN 3D</h2>
-                    <p>vos lo imaginas, <span>print it lo materializa</span></p>
-                </div>
-            </section>
-            <!-- fin de seccion de presentacion -->
-            <!-- inicio de seccion de servicios -->
-            <section class="servicios-index">
-                <h2>SERVICIOS</h2>
-                <p>La solucion justa para tu necesidad</p>
-            </section>
-            <section class="serv-imp-3d">
-                <img src="img/icono-impresion-3d.png" alt="impresion-3D">
-                <h3>Impresion 3D</h3>
-                <p>La impresión 3D es una nueva forma de manufactura que expande los límites de la producción de piezas
-                </p>
-                <a href="pages/impresion-3d.html">Ver mas</a>
-            </section>
-            <section class="serv-dis-3d">
-                <img src="img/icono-diseno-3d.png" alt="Diseño-3D">
-                <h3>Diseño 3D</h3>
-                <p>El diseño 3D es nuestra herramienta para transformar tus ideas, y convertirlas en ese objeto que
-                    buscás</p>icono-impresion-3d.pngicono-impresion-3d.png
-                <a href="pages/diseño-3d.html">Ver mas</a>
-            </section>
-            <!-- fin de seccion de servicios -->
-            <!-- inicio de seccion para comenzar proyecto -->
-            <section class="contacto-index">
-                <h3>No pierdas tiempo, envianos tu proyecto y recibí tu presupuesto al instante</h3>
-                <a href="pages/contacto.html">CONTACTANOS</a>
-            </section>
-            <!-- fin de seccion para comentar proyecto -->
-        </main>
-        <!-- FIN DEL MAIN -->
-        <!-- INICIO DEL FOOTER -->
-        <footer>
-            <a href="https://www.instagram.com/print_it_all_3d/"><i class="fa-brands fa-instagram"></i></a>
-            <div class="mail">
-                <i class="fa-solid fa-envelope"></i>
-                <p>print.it.3d.contacto@gmail.com</p>
+    <!-- INICIO DEL MAIN -->
+    <main class="grid-layout-index">
+        <!-- inicio de seccion de presentacion -->
+        <section class="presentacion-index">
+            <div>
+                <h2>IMPRIMIMOS TODAS TUS IDEAS EN 3D</h2>
+                <p>vos lo imaginas, <span>print it lo materializa</span></p>
             </div>
-        </footer>
-        <!-- FIN DEL FOOTER -->
+        </section>
+        <!-- fin de seccion de presentacion -->
+        <!-- inicio de seccion de servicios -->
+        <section class="servicios-index">
+            <h2>SERVICIOS</h2>
+            <p>La solucion justa para tu necesidad</p>
+        </section>
+        <section class="serv-imp-3d">
+            <img src="img/icono-impresion-3d.png" alt="impresion-3D">
+            <h3>Impresion 3D</h3>
+            <p>La impresión 3D es una nueva forma de manufactura que expande los límites de la producción de piezas
+            </p>
+            <a href="pages/impresion-3d.html">Ver mas</a>
+        </section>
+        <section class="serv-dis-3d">
+            <img src="img/icono-diseno-3d.png" alt="Diseño-3D">
+            <h3>Diseño 3D</h3>
+            <p>El diseño 3D es nuestra herramienta para transformar tus ideas, y convertirlas en ese objeto que
+                buscás</p>icono-impresion-3d.pngicono-impresion-3d.png
+            <a href="pages/diseño-3d.html">Ver mas</a>
+        </section>
+        <!-- fin de seccion de servicios -->
+        <!-- inicio de seccion para comenzar proyecto -->
+        <section class="contacto-index">
+            <h3>No pierdas tiempo, envianos tu proyecto y recibí tu presupuesto al instante</h3>
+            <a href="pages/contacto.html">CONTACTANOS</a>
+        </section>
+        <!-- fin de seccion para comentar proyecto -->
+    </main>
+    <!-- FIN DEL MAIN -->
+    <!-- INICIO DEL FOOTER -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <section class="d-flex justify-content-center p-4 border-bottom">
+            <divS class="me-5 d-none d-lg-block">
+                <span>Nuestras redes sociales:</span>
+                </a>
+                <a href="https://www.instagram.com/print_it_all_3d" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </section>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2022 Copyright:
+            <a class="text-reset fw-bold" href="#">Printit3D.com</a>
+        </div>
+    </footer>
+    <!-- FIN DEL FOOTER -->
 </body>
 
 </html>

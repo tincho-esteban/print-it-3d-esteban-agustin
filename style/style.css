@@ -12,53 +12,22 @@
 
 nav {
     background-color: #1C658C;
-    height: 55px;
-    width: 100%;
-    position: fixed;
     box-shadow: 1px 0px 10px 10px rgba(0, 0, 0, .3);
 }
 
 nav a img {
-    height: 55px;
+    height: 65px;
     float: left;
-    padding: 5px 10px;
+    padding: 10px 10px;
 }
 
 nav a h1 {
-    line-height: 55px;
+    line-height: 60px;
     font-size: 25px;
     float: left;
     color: white;
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 1px;
-}
-
-#check {
-    display: none;
-}
-
-.boton-menu {
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 55px;
-    margin-right: 15px;
-}
-
-nav ul {
-    position: fixed;
-    width: 100%;
-    height: calc(100vh - 55px);
-    background-color: #398AB9;
-    top: 55px;
-    right: -100%;
-    text-align: center;
-    transition: all .5s;
-}
-
-nav ul li {
-    margin: 50px 0;
-    line-height: 40px;
 }
 
 nav ul li a {
@@ -67,9 +36,6 @@ nav ul li a {
     font-size: 20px;
 }
 
-#check:checked~ul {
-    right: 0;
-}
 
 /* fin del nav */
 
@@ -578,33 +544,11 @@ nav ul li a {
 /* fin de contacto.html */
 
 /* footer */
-footer {
-    background-color: #757575;
-    height: 60px;
-    position: relative;
-}
-
 footer a i {
-    float: left;
-    position: absolute;
-    top: 10px;
     font-size: 35px;
     color: black;
-    padding-left: 5px;
+    padding-left: 10px;
 }
-
-.mail {
-    margin: 0 auto;
-    text-align: center;
-
-}
-
-.mail p {
-    display: inline;
-    line-height: 60px;
-}
-/* fin de footer */
-
 /* media queries */
 @media screen and (min-width: 1024px){
     .boton-menu {
@@ -621,13 +565,6 @@ footer a i {
         float: right;
         margin-right: 20px;
         animation: 0s;
-    }
-    
-    nav ul li {
-        margin: 0 5px;
-        line-height: 55px;
-        display: inline;
-
     }
 
     nav ul li:hover {
