@@ -1,4 +1,3 @@
-/* aca insetaria los cs de css con animaciones */
 * {
     padding: 0;
     margin: 0;
@@ -45,58 +44,24 @@ nav ul li a {
     height: auto;
     width: 100%;
     display: grid;
-    grid-template-areas: "presentacion"
+    grid-template-areas:
+        "presentacion"
         "servicios"
         "imp-3d"
         "dis-3d"
         "contacto";
 }
 /* presentacion index */
-.presentacion-index {
+
+.fotos-index{
     grid-area: presentacion;
+}
+
+.carousel {
+    width: 100%;
     height: 100vh;
-    background-image: url(../img/fondo-index.png);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.presentacion-index div {
-    background-color: rgba(0, 0, 0, 0.7);
-    height: auto;
-    width: 70%;
-    max-width: 500px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.presentacion-index div h2 {
-    color: white;
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 1px;
-    font-size: 30px;
-    line-height: 40px;
-    margin: 40px 15px 20px;
-}
-
-.presentacion-index div p {
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    line-height: 25px;
-    margin: 0 15px 40px;
-}
-
-.presentacion-index div span {
-    font-family: 'Oswald', sans-serif;
-    text-decoration: underline;
-}
 /* fin de presentacion index */
 /* servicios-index */
 .servicios-index {
