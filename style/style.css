@@ -60,6 +60,11 @@ nav ul li a {
     height: 100vh;
 }
 
+.carousel-caption  {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
 /* fin de presentacion index */
 /* servicios-index */
 .servicios-index {
