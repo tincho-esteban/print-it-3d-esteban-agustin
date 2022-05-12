@@ -290,3 +290,84 @@ nav {
   .informacion-diseño-3d p {
     margin: 5px 20px;
     font-size: 18px; }
+
+.presentacion-contacto {
+  height: 100vh;
+  background-image: url(../img/fondo-diseno.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .presentacion-contacto div {
+    background-color: rgba(0, 0, 0, 0.1);
+    height: auto;
+    width: 70%;
+    max-width: 500px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; }
+    .presentacion-contacto div h2 {
+      color: white;
+      font-family: 'Bebas Neue', cursive;
+      letter-spacing: 1px;
+      font-size: 30px;
+      line-height: 40px;
+      margin: 40px 15px 40px; }
+
+.contenedor-principal-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f1f1f1; }
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column; }
+  .formulario-contacto h3 {
+    padding: 10px 20px;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif; }
+  .formulario-contacto input {
+    height: 50px;
+    background-color: #8f8f8f;
+    color: white;
+    border: 0px;
+    margin: 20px 25px;
+    width: 80%;
+    max-width: 400px;
+    padding: 25px;
+    font-size: 20px; }
+  .formulario-contacto div {
+    position: relative; }
+  .formulario-contacto label {
+    position: absolute;
+    color: #f1f1f1;
+    top: 35px;
+    left: 45px;
+    font-size: 20px;
+    pointer-events: none;
+    width: 300px; }
+
+.contenedor-boton-contacto input {
+  background-color: #33ccff;
+  border-radius: 5px;
+  width: 200px;
+  height: 70px; }
+
+.nuestros-datos {
+  margin-bottom: 20px; }
+  .nuestros-datos h3 {
+    padding: 10px 0px;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 10px; }
+  .nuestros-datos p {
+    font-size: 18px;
+    margin-bottom: 30px; }
+    .nuestros-datos p span {
+      font-weight: bold; }

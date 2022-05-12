@@ -1,0 +1,108 @@
+//presentacion
+.presentacion-contacto {
+    height: 100vh;
+    background-image: url(../img/fondo-diseno.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        background-color: $sombra2;
+        height: auto;
+        width: 70%;
+        max-width: 500px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        h2 {
+            color: white;
+            font-family: 'Bebas Neue', cursive;
+            letter-spacing: 1px;
+            font-size: 30px;
+            line-height: 40px;
+            margin: 40px 15px 40px;
+        }
+    }
+}
+
+//form contacto
+.contenedor-principal-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $color5;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        padding: 10px 20px;
+        font-size: 25px;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    input {
+        height: 50px;
+        background-color: $color6;
+        color: white;
+        border: 0px;
+        margin: 20px 25px;
+        width: 80%;
+        max-width: 400px;
+        padding: 25px;
+        font-size: 20px;
+    }
+
+    div {
+        position: relative;
+    }
+
+    label {
+        position: absolute;
+        color: $color5;
+        top: 35px;
+        left: 45px;
+        font-size: 20px;
+        pointer-events: none;
+        width: 300px;
+    }
+}
+
+.contenedor-boton-contacto {
+    input {
+        background-color: $color7;
+        border-radius: 5px;
+        width: 200px;
+        height: 70px;
+    }
+}
+
+// nuestros datos
+.nuestros-datos {
+    margin-bottom: 20px;
+
+    h3 {
+        padding: 10px 0px;
+        font-size: 25px;
+        font-family: 'Oswald', sans-serif;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 18px;
+        margin-bottom: 30px;
+
+        span {
+            font-weight: bold;
+        }
+    }
+}
