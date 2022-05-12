@@ -117,3 +117,65 @@ nav {
     color: white;
     border-radius: 5px;
     font-size: 30px; }
+
+.presentacion-trabajos {
+  height: 100vh;
+  background-image: url(../img/fondo-trabajos.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .presentacion-trabajos div {
+    background-color: rgba(0, 0, 0, 0.1);
+    height: auto;
+    width: 70%;
+    max-width: 500px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; }
+    .presentacion-trabajos div h2 {
+      color: white;
+      font-family: 'Bebas Neue', cursive;
+      letter-spacing: 1px;
+      font-size: 30px;
+      line-height: 40px;
+      margin: 40px 15px 20px; }
+    .presentacion-trabajos div p {
+      color: white;
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      line-height: 25px;
+      margin: 0 15px 40px; }
+
+.subtitulo-trabajos {
+  text-align: center;
+  background-color: #D8D2CB;
+  padding: 15px 0;
+  margin-bottom: 40px; }
+
+.tipos-de-trabajos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.tipos-de-trabajos div {
+  background: #1C658C linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  width: 80%;
+  max-width: 500px;
+  height: 75px;
+  line-height: 75px;
+  margin-bottom: 40px;
+  padding-left: 15px;
+  display: flex;
+  align-items: center; }
+
+.tipos-de-trabajos div h3 {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  pointer-events: none; }
