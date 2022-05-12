@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -179,3 +180,113 @@ nav {
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
   pointer-events: none; }
+
+.presentacion-impresion-3d {
+  height: 100vh;
+  background-image: url(../img/fondo-impresion.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .presentacion-impresion-3d div {
+    background-color: rgba(0, 0, 0, 0.1);
+    height: auto;
+    width: 70%;
+    max-width: 500px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; }
+    .presentacion-impresion-3d div h2 {
+      color: white;
+      font-family: 'Bebas Neue', cursive;
+      letter-spacing: 1px;
+      font-size: 30px;
+      line-height: 40px;
+      margin: 40px 15px 20px; }
+    .presentacion-impresion-3d div p {
+      color: white;
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      line-height: 25px;
+      margin: 0 15px 40px; }
+
+.subtitulo-impresion-3d {
+  text-align: center;
+  background-color: #D8D2CB;
+  padding: 15px 0;
+  margin-bottom: 40px; }
+  .subtitulo-impresion-3d h2 {
+    font-size: 30px;
+    margin-bottom: 10px; }
+  .subtitulo-impresion-3d p {
+    font-size: 20px;
+    margin: 0 15px 10px; }
+
+.como-funciona {
+  display: grid;
+  grid-template-areas: "sub-titulo" "texto";
+  text-align: justify;
+  margin-bottom: 20px; }
+  .como-funciona img {
+    display: none; }
+  .como-funciona h3 {
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 10px;
+    font-size: 30px; }
+  .como-funciona p {
+    margin: 5px 20px;
+    font-size: 18px; }
+
+.presentacion-diseño-3d {
+  height: 100vh;
+  background-image: url(../img/fondo-diseno.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .presentacion-diseño-3d div {
+    background-color: rgba(0, 0, 0, 0.1);
+    height: auto;
+    width: 70%;
+    max-width: 500px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; }
+    .presentacion-diseño-3d div h2 {
+      color: white;
+      font-family: 'Bebas Neue', cursive;
+      letter-spacing: 1px;
+      font-size: 30px;
+      line-height: 40px;
+      margin: 40px 15px 20px; }
+    .presentacion-diseño-3d div p {
+      color: white;
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      line-height: 25px;
+      margin: 0 15px 40px; }
+
+.informacion-diseño-3d {
+  display: grid;
+  grid-template-areas: "sub-titulo" "texto";
+  text-align: justify;
+  margin-bottom: 20px; }
+  .informacion-diseño-3d img {
+    display: none; }
+  .informacion-diseño-3d h3 {
+    text-align: center;
+    background-color: #D8D2CB;
+    padding: 15px 0;
+    margin-bottom: 10px; }
+  .informacion-diseño-3d p {
+    margin: 5px 20px;
+    font-size: 18px; }
