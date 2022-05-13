@@ -371,3 +371,9 @@ nav {
     margin-bottom: 30px; }
     .nuestros-datos p span {
       font-weight: bold; }
+
+/* footer */
+footer a i {
+  font-size: 35px;
+  color: black;
+  padding-left: 10px; }
