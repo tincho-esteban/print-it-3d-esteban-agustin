@@ -377,3 +377,20 @@ footer a i {
   font-size: 35px;
   color: black;
   padding-left: 10px; }
+
+.serv-dis-3d:hover {
+  animation: sombra-zoom 0.4s forwards; }
+
+.serv-imp-3d:hover {
+  animation: sombra-zoom 0.4s forwards; }
+
+.tipos-de-trabajos div:hover {
+  animation: sombra-zoom 0.4s forwards; }
+
+@keyframes sombra-zoom {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); }
+  100% {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.5); } }
