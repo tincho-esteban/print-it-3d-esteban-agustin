@@ -35,8 +35,7 @@
     padding: 15px 0;
 }
 
-.serv-imp-3d {
-    grid-area: imp-3d;
+.serv {
     margin: 40px auto;
     box-shadow: 1px 1px 10px 10px $sombra2;
     width: 80%;
@@ -71,40 +70,14 @@
     }
 }
 
+.serv-imp-3d {
+    grid-area: imp-3d;
+    @extend .serv;
+}
+
 .serv-dis-3d {
     grid-area: dis-3d;
-    margin: 40px auto;
-    box-shadow: 1px 1px 10px 10px $sombra2;
-    width: 80%;
-    height: auto;
-    max-width: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-
-    img {
-        width: 75%;
-        margin-top: 30px;
-    }
-
-    h3 {
-        margin: 15px;
-        font-family: 'Oswald', sans-serif;
-        font-size: 40px;
-    }
-
-    p {
-        margin: 0 15px 20px;
-    }
-
-    a {
-        background-color: $color2;
-        margin-bottom: 20px;
-        padding: 10px;
-        color: white;
-    }
+    @extend .serv;
 }
 
 // contacto index

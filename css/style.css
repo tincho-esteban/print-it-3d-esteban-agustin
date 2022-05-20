@@ -55,8 +55,7 @@ nav {
   background-color: #D8D2CB;
   padding: 15px 0; }
 
-.serv-imp-3d {
-  grid-area: imp-3d;
+.serv, .serv-imp-3d, .serv-dis-3d {
   margin: 40px auto;
   box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
   width: 80%;
@@ -67,47 +66,26 @@ nav {
   align-items: center;
   flex-direction: column;
   text-align: center; }
-  .serv-imp-3d img {
+  .serv img, .serv-imp-3d img, .serv-dis-3d img {
     width: 75%;
     margin-top: 30px; }
-  .serv-imp-3d h3 {
+  .serv h3, .serv-imp-3d h3, .serv-dis-3d h3 {
     margin: 15px;
     font-family: 'Oswald', sans-serif;
     font-size: 40px; }
-  .serv-imp-3d p {
+  .serv p, .serv-imp-3d p, .serv-dis-3d p {
     margin: 0 15px 20px; }
-  .serv-imp-3d a {
+  .serv a, .serv-imp-3d a, .serv-dis-3d a {
     background-color: #398AB9;
     margin-bottom: 20px;
     padding: 10px;
     color: white; }
 
+.serv-imp-3d {
+  grid-area: imp-3d; }
+
 .serv-dis-3d {
-  grid-area: dis-3d;
-  margin: 40px auto;
-  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
-  width: 80%;
-  height: auto;
-  max-width: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center; }
-  .serv-dis-3d img {
-    width: 75%;
-    margin-top: 30px; }
-  .serv-dis-3d h3 {
-    margin: 15px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 40px; }
-  .serv-dis-3d p {
-    margin: 0 15px 20px; }
-  .serv-dis-3d a {
-    background-color: #398AB9;
-    margin-bottom: 20px;
-    padding: 10px;
-    color: white; }
+  grid-area: dis-3d; }
 
 .contacto-index {
   grid-area: contacto;
