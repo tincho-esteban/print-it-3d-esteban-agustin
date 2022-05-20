@@ -9,3 +9,14 @@ $color4: #1C658C;
 $color5: #f1f1f1;
 $color6: #8f8f8f;
 $color7: #33ccff;
+
+$colores-footer: (
+    1: #f8f9fa,
+    2: #0000000d,
+);
+
+@each $n, $color in $colores-footer {
+    .color-footer-#{$n} {
+        background-color: $color;
+    }
+}

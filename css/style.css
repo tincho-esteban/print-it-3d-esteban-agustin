@@ -8,6 +8,12 @@
   font-family: 'Patua One', cursive;
   color: black; }
 
+.color-footer-1 {
+  background-color: #f8f9fa; }
+
+.color-footer-2 {
+  background-color: #0000000d; }
+
 nav {
   background-color: #1C658C; }
   nav a img {
