@@ -4,9 +4,7 @@
     background-image: url(../img/fondo-impresion.jpg);
     background-size: cover;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
 
     div {
         background-color: $sombra2;

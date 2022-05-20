@@ -41,9 +41,7 @@
     width: 80%;
     height: auto;
     max-width: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     flex-direction: column;
     text-align: center;
 

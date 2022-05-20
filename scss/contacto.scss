@@ -4,9 +4,7 @@
     background-image: url(../img/fondo-diseno.jpg);
     background-size: cover;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
 
     div {
         background-color: $sombra2;
@@ -33,9 +31,7 @@
 
 //form contacto
 .contenedor-principal-contacto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     flex-direction: column;
     background-color: $color5;
 }

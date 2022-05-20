@@ -20,3 +20,9 @@ $colores-footer: (
         background-color: $color;
     }
 }
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

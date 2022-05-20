@@ -4,9 +4,7 @@
     background-image: url(../img/fondo-trabajos.jpg);
     background-size: cover;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
 
     div {
         background-color: $sombra2;
@@ -48,9 +46,7 @@
 
 // tipos de trabajos
 .tipos-de-trabajos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     flex-direction: column;
 }
 
